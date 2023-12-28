@@ -1,0 +1,64 @@
+{
+    "classes":[
+        {"class":"X","section":"A"},
+        {"class":"X","section":"B"},
+        {"class":"X","section":"C"}
+    ],
+    "subjects":[
+        {"subject":"TAMIL","code":"101"},
+        {"subject":"ENGLISH","code":"102"},
+        {"subject":"MATHS","code":"103"},
+        {"subject":"SCIENCE","code":"104"},
+        {"subject":"SOCIAL","code":"105"}
+    ],
+    "students":[
+        {"name":"DINESH KUMAR","rollid":"1","gender":"Male","class":"X - A","school":"10"},
+        {"name":"KUMAR","rollid":"2","gender":"Male","class":"X - A","school":"10"},
+        {"name":"DineshKumar","rollid":"3","gender":"Male","class":"X - B","school":"10"},
+        {"name":"Name","rollid":"3","gender":"Male","class":"X - A","school":"10"}
+    ],
+    "subjectcombs":[
+        {"class":"X - A","subjects":["TAMIL","ENGLISH","MATHS","SCIENCE","SOCIAL"]},
+        {"class":"X - C","subjects":["TAMIL"]},
+        {"class":"X - B","subjects":["TAMIL","ENGLISH"]}
+    ],
+    "schools":[
+        {"schoolid":"103","schoolname":"dineshkumar metric higher secondary school"},
+        {"schoolid":"10","schoolname":"edappadis"},
+        {"schoolid":"103","schoolname":"Shankari metric higher secondary school"},
+        {"schoolid":"123","schoolname":"Dummy METRIC School"}
+    ],
+    "schoolexams":[
+        {"school":"103","exams":["Test1","Test3","Test2"]},
+        {"school":"10","exams":["Test1","Test3"]}
+    ],
+    "results":{
+        "Test1":{
+            "X - A":[
+                {"name":"DINESH KUMAR","rollid":"1","marks":[40,35,35,35,35],"total":180,"result":"PASS","rank":2},
+                {"name":"KUMAR","rollid":"2","marks":["A",36,36,36,36],"total":144,"result":"FAIL","rank":"FAIL"},
+                {"name":"Name","rollid":"3","marks":[37,37,37,37,37],"total":185,"result":"PASS","rank":1}
+            ]
+        },
+        "Test3":{
+            "X - A":[
+                {"name":"KUMAR","rollid":"2","marks":[50,50,50,50,50],"total":250,"result":"PASS","rank":1},
+                {"name":"DINESH KUMAR","rollid":"1","marks":[50,50,50,50,50],"total":250,"result":"PASS","rank":1},
+                {"name":"Name","rollid":"3","marks":[50,"A",100,100,100],"total":350,"result":"FAIL","rank":"FAIL"}
+            ],
+            "X - B":[
+                {"name":"DineshKumar","rollid":"3","marks":["100","100"],"total":200,"result":"PASS","rank":1}
+            ]
+        }
+    },
+    "staffs":[
+        {"name":"DINESH KUMAR","username":"dk","password":"123","permission":"superadmin","schoolid":"10"},
+        {"name":"DINESH KUMAR","username":"dns","password":"123","permission":"superadmin","schoolid":"10"},
+        {"name":"Dinesh","username":"dns2","password":"123","permission":"staff","schoolid":"103"}
+    ],
+    "staffclasses":[
+        {"staffname":"dk","classes":["X - A","X - C","X - B"]},
+        {"staffname":"dns2","classes":["X - A","X - C","X - B"]},
+        {"staffname":"dns","classes":["X - B","X - A"]}
+    ]
+}
